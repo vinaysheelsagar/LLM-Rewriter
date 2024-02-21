@@ -154,7 +154,7 @@ setup(
     # executes the function `main` from this package when invoked:
     entry_points={  # Optional
         "console_scripts": [
-            "rew=rew.gateway",
+            "rew=rew:gateway",
         ],
     },
     # List additional URLs that are relevant to your project as a dict.
