@@ -1,6 +1,5 @@
 import os
 import yaml
-from icecream import ic
 import google.generativeai as genai
 import click
 
