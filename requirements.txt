@@ -1,3 +1,0 @@
-google-generativeai
-pyyaml
-click
