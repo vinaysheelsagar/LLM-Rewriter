@@ -105,14 +105,8 @@ def get_config(
     return config
 
 
-@click.command(
-    context_settings = dict( help_option_names = ['-h', '--help'] )
-)
-@click.option(
-    '-c', '--chat', 
-    is_flag=True, 
-    help='To rephrase chat messages',
-)
+@click.command(context_settings = dict( help_option_names = ['-h', '--help'] ))
+@click.option('-c', '--chat', is_flag=True, help='To rephrase chat messages')
 @click.option('--api-key', type=click.STRING)
 @click.version_option()
 def gateway(
@@ -129,7 +123,7 @@ def gateway(
         genai.configure(api_key=config['api_key'])
         model = genai.GenerativeModel(config['model_name'])
 
-        message_history = list()
+        message_history = []
 
         ask_message = "\nMessage: "
 
