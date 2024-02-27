@@ -13,7 +13,7 @@ pipx install git+https://github.com/vinaysheelsagar/Rew.git
 
 
 # Set the API Key
-_Note: currently rew only uses Gemini API_
+_Note: rew only uses Gemini API currently_
 ~~~
 rew --api-key="API KEY HERE"
 ~~~
